@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:161386442274:task-definition/task-defination:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:161386442274:task-definition/nodejs-task-defination:1",
     "containerDefinitions": [
         {
             "name": "nodejs-app",
-            "image": "161386442274.dkr.ecr.ap-south-1.amazonaws.com/nodejs",
+            "image": "161386442274.dkr.ecr.us-east-1.amazonaws.com/nodejs-app",
             "cpu": 0,
             "portMappings": [
                 {
@@ -24,15 +24,15 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/task-defination",
-                    "awslogs-region": "ap-south-1",
+                    "awslogs-group": "/ecs/nodejs-task-defination",
+                    "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 },
                 "secretOptions": []
             }
         }
     ],
-    "family": "task-defination",
+    "family": "nodejs-task-defination",
     "taskRoleArn": "arn:aws:iam::161386442274:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::161386442274:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
@@ -82,7 +82,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-01-02T13:41:56.235Z",
+    "registeredAt": "2024-01-02T17:30:05.104Z",
     "registeredBy": "arn:aws:iam::161386442274:root",
     "tags": []
 }
